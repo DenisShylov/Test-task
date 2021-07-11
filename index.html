@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id='canvas' width="600" height="600">Ваш браузер устарел!</canvas>
+        <div id="palette"></div>
+        <div id="clear">Очистить изображение</div>
+      </div>
+      
+      
+       <div id="widthline">Изменить ширину линии:
+      <input type="range" name="brushsize" min="1" max="35"
+      id="brushSlider" step="1" value="1" onchange="changeLineWidth(this.value);"> 
+    </div> 
+
+    <input id="width1" type="number">
+      <input id="height1" type="number">
+      <button id="click1">Изменить размер холста</button>
+      <script src="main.js"></script>
+</body>
+</html>
